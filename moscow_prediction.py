@@ -27,14 +27,14 @@ if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
 else:
     def user_input_features():
-        Number_of_announcements = st.sidebar.text_input('Number_of_announcements', 0)
-        Number_of_announced_NLRI_prefixes = st.sidebar.text_input('Number_of_announced_NLRI_prefixes',0)
-        Average_AS_path_length = st.sidebar.text_input('Average_AS_path_length', 0)
-        Average_unique_AS_path_length = st.sidebar.text_input('Average_unique_AS_path_length', 0)
-        Number_of_duplicate_announcements = st.sidebar.text_input('Number_of_duplicate_announcements', 0)
-        Maximum_edit_distance = st.sidebar.text_input('Maximum_edit_distance', 0)
-        Maximum_AS_path_length = st.sidebar.text_input('Maximum_AS_path_length', 0)
-        Number_of_Interior_Gateway_Protocol_IGP_packets = st.sidebar.text_input('Number_of_Interior_Gateway_Protocol_IGP_packets', 0)
+        Number_of_announcements = st.sidebar.text_input('Number_of_announcements >>> Input an integer value. Eg: "55","3547"', 0)
+        Number_of_announced_NLRI_prefixes = st.sidebar.text_input('Number_of_announced_NLRI_prefixes >>> Input an integer value. Eg: "133","15869"',0)
+        Average_AS_path_length = st.sidebar.text_input('Average_AS_path_length >>> Input an integer value. Eg: "5","6"', 0)
+        Average_unique_AS_path_length = st.sidebar.text_input('Average_unique_AS_path_length >>> Input an integer value. Eg: "5","6"', 0)
+        Number_of_duplicate_announcements = st.sidebar.text_input('Number_of_duplicate_announcements >>> Input an integer value. Eg: "58","7998"', 0)
+        Maximum_edit_distance = st.sidebar.text_input('Maximum_edit_distance >>> Input an integer value. Eg: "1","59"', 0)
+        Maximum_AS_path_length = st.sidebar.text_input('Maximum_AS_path_length >>> Input an integer value. Eg: "9","14"', 0)
+        Number_of_Interior_Gateway_Protocol_IGP_packets = st.sidebar.text_input('Number_of_Interior_Gateway_Protocol_IGP_packets >>> Input an integer value. Eg: "54","3478"', 0)
         data = {'Number_of_announcements': Number_of_announcements,
                 'Number_of_announced_NLRI_prefixes': Number_of_announced_NLRI_prefixes,
                 'Average_AS_path_length': Average_AS_path_length,
